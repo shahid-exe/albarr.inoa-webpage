@@ -1,0 +1,146 @@
+@import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: white;
+    min-height: 100vh;
+    overflow-x: hidden;
+}
+
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 30px 100px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    z-index: 100;
+    background: rgba(255, 255, 255, 0.9);
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+    margin-right: 270px;
+}
+
+.navigation a {
+    text-decoration: none;
+    color: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+    margin: 0 10px;
+    font-weight: 600;
+}
+
+.navigation a:hover, .navigation a.active {
+    background: #359381;
+    color: #fff;
+}
+
+.brochures {
+    padding: 100px 50px;
+    text-align: center;
+    margin-top: 100px;
+}
+
+.brochures h2 {
+    font-size: 2.5em;
+    margin-bottom: 50px;
+    color: #359381;
+}
+
+.brochures-list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.brochure-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    color: #fff;
+    background: #359381;
+    border-radius: 30px;
+    text-decoration: none;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.brochure-btn:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    animation: neon-shift 1s linear infinite;
+}
+
+footer {
+    background: #359381;
+    color: white;
+    text-align: center;
+    padding: 50px 0;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.footer-content h3 {
+    font-size: 2em;
+    margin-bottom: 20px;
+}
+
+.footer-content p {
+    max-width: 600px;
+    margin: 20px auto;
+    font-size: 1em;
+    line-height: 1.6;
+}
+
+.socials {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.socials li {
+    margin: 0 10px;
+}
+
+.socials a {
+    text-decoration: none;
+    color: white;
+}
+
+.socials img {
+    width: 30px;
+    height: 30px;
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+@keyframes neon-shift {
+    0%, 100% {
+        box-shadow: 0 0 15px rgba(255, 255, 255, 0.5);
+    }
+    50% {
+        box-shadow: 0 0 30px rgba(255, 255, 255, 1);
+    }
+}

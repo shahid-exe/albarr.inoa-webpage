@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <link rel="icon" href="./new logo.jpg" type="image/x-icon">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Services - Albarr.inoa</title>
+    <link rel="stylesheet" href="companystyle.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css?family=Poppins:wght@300;400;500;600;700;800;900&display=swap');
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            background: #f4f4f4;
+            min-height: 100vh;
+            overflow-x: hidden;
+        }
+
+        header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 100px;
+    background: rgba(255, 255, 255, 0.9);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+
+.logo {
+    font-size: 2em;
+    color: #359381;
+    pointer-events: none;
+}
+.navigation {
+    display: flex;
+}
+
+.navigation a {
+    color: #359381;
+    text-decoration: none;
+    margin: 0 15px;
+    font-size: 1em;
+    transition: color 0.3s, background 0.3s;
+}
+
+.navigation a:hover,
+.navigation a.active {
+    color: #fff;
+    background: #359381;
+    padding: 6px 15px;
+    border-radius: 20px;
+}
+
+        .services {
+            margin: 120px 0;
+            padding: 20px;
+        }
+
+        .services h2 {
+            text-align: center;
+            color: #359381;
+            font-size: 2.5em;
+            margin-bottom: 20px;
+        }
+
+        .partners {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-around;
+            gap: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .partner {
+            background-color: #fff;
+            border-radius: 10px;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            width: 22%;
+            max-width: 250px;
+        }
+
+        .partner img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+            transition: transform 0.3s ease;
+        }
+
+        .partner p {
+            font-size: 1.1em;
+            color: #2C3E50;
+            margin: 10px 0 0;
+        }
+
+        .partner:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2);
+        }
+
+        .partner:hover img {
+            transform: scale(1.05);
+        }
+
+        @media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        padding: 20px;
+    }
+        
+        @media (max-width: 480px) {
+            .partner {
+                width: 100%;
+            }
+        }
+    }
+
+        footer {
+            background: #359381;
+            color: white;
+            text-align: center;
+            padding: 50px 0;
+        }
+
+        .footer-content {
+    max-width: 1200px;
+    margin: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.socials {
+    list-style: none;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+}
+
+.socials li {
+    margin: 0 15px;
+}
+
+.socials li a {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: white;
+    font-size: 1em;
+    transition: color 0.3s;
+}
+
+.socials li a:hover {
+    color: #000000;
+}
+
+.socials li a img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px; /* Space between icon and text */
+}
+
+.footer-bottom {
+    margin-top: 20px;
+    font-size: 0.9em;
+}
+
+
+    </style>
+</head>
+<body>
+    <header>
+        <a href="index.html" class="logo">albarr.inoa</a>
+        <nav class="navigation">
+            <a href="index.html">Home</a>
+            <a href="albarr.inoa-about.html">About</a>
+            <a href="./albarr.inoa-services.html" class="active">Service</a>
+            <a href="./index.html">Contact</a>
+        </nav>
+    </header>
+
+    <section class="services">
+        <h2>Our Partners</h2>
+        <div class="partners">
+            <div class="partner">
+                <a href="bajaj.html">
+                    <img src="./companies_logo/bajaj-electricals-logo-83E8D1D919-seeklogo.com.png" alt="Bajaj Electricals">
+                </a>
+                <p>Bajaj Electricals</p>
+            </div>
+            <div class="partner">
+                <a href="eveready.html">
+                    <img src="./companies_logo/eveready.png" alt="Eveready Industries">
+                </a>
+                <p>Eveready Industries</p>
+            </div>
+            <div class="partner">
+                <a href="rr-ispat.html">
+                    <img src="./companies_logo/rr_ipsat.jpeg" alt="RR ISPAT">
+                </a>
+                <p>RR ISPAT</p>
+            </div>
+            <div class="partner">
+                <a href="klite.html">
+                    <img src="./companies_logo/k-lite.png" alt="K-Lite Industries">
+                </a>
+                <p>K-Lite Industries</p>
+            </div>
+            <div class="partner">
+                <a href="powerone.html">
+                    <img src="./companies_logo/powerone.jpeg" alt="Power One Micro Systems">
+                </a>
+                <p>Power One Micro Systems</p>
+            </div>
+            <div class="partner">
+                <a href="tmeic.html">
+                    <img src="./companies_logo/tmeic.jpeg" alt="TMEIC">
+                </a>
+                <p>TMEIC</p>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="footer-content">
+            <h3>albarr.inoa</h3>
+            <p>Providing comprehensive electrical solutions for industrial, residential, and commercial sectors.</p>
+            <ul class="socials">
+                
+                <li><a href="https://www.linkedin.com/company/albarr-inoa/posts/?feedView=all"><img src="./socialsicon.png" alt="LinkedIn">Linkedin</a></li>
+            </ul>
+        </div>
+        <div class="footer-bottom">
+            <p>For more info or to get in touch, please contact us through <a class="wap" href="whatsapp://send?text=Hello World!&phone=+919043090730">WhatsApp</a> or mail us at <a class="wap" href="mailto:albarr.inoa@gmail.com">albarr.inoa@gmail.com</a></p>
+            <p>&copy; 2024 albarr.inoa. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>
